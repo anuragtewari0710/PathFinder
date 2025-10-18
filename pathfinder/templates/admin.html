@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+  <h2>Admin - Careers</h2>
+  <ul>
+    {% for c in careers %}
+    <li><strong>{{ c.title }}</strong> — {{ c.industry }} — ₹{{ c.avg_salary }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

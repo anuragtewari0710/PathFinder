@@ -1,0 +1,28 @@
+:root{
+  --accent:#0b5;
+  --bg:#f6f8fa;
+  --card:#fff;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial; background:var(--bg); margin:0; color:#222}
+.container{width:90%; max-width:900px; margin:28px auto}
+.site-header{background:var(--accent); color:#fff; padding:14px 0}
+.header-inner{display:flex; align-items:center; justify-content:space-between}
+.brand a{color:#100f0f; text-decoration:none; font-weight:700; font-size:20px}
+.main-nav a{color:#fff; margin-left:14px; text-decoration:none}
+.hero{background:linear-gradient(90deg, rgba(11,85,85,0.08), rgba(11,85,85,0.02)); padding:36px; border-radius:10px; text-align:center}
+.hero h2{margin:6px 0; font-size:28px}
+.card{background:var(--card); padding:20px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.card h2{margin-top:0}
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea{
+  width:100%; padding:10px; margin:8px 0; border:1px solid #e1e4e8; border-radius:6px;
+}
+button{background:var(--accent); color:#fff; border:none; padding:10px 14px; border-radius:6px; cursor:pointer}
+button.btn-secondary{background:#eee; color:#333}
+.btn{display:inline-block; margin-top:10px; text-decoration:none; padding:10px 14px; border-radius:6px; background:var(--accent); color:#fff}
+.career-card{background:#fff; padding:12px; border-radius:6px; margin:8px 0; box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+small{color:var(--muted)}
+.brand{
+  color: black;
+}

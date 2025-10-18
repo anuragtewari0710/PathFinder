@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+  <h2>Create an account</h2>
+  <form id="registerForm">
+    <input type="text" name="first_name" id="first_name" placeholder="First name" required>
+    <input type="text" name="last_name" id="last_name" placeholder="Last name">
+    <input type="email" name="email" id="email" placeholder="Email" required>
+    <input type="password" name="password" id="password" placeholder="Password" required>
+    <input type="text" name="education" id="education" placeholder="Highest education">
+    <input type="number" name="cgpa" id="cgpa" placeholder="CGPA" step="0.01">
+    <button type="submit">Register</button>
+  </form>
+  <p>Already have an account? <a href="{{ url_for('login_page') }}">Login</a></p>
+</div>
+{% endblock %}

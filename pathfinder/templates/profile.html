@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+  <h2>Your Profile</h2>
+  <form id="profileForm">
+    <label>Skills (comma separated)</label>
+    <input type="text" id="skills" placeholder="Python, SQL, Machine Learning">
+    <label>Interests (comma separated)</label>
+    <input type="text" id="interests" placeholder="Data Science, Web Development">
+    <button type="submit">Save Profile</button>
+  </form>
+  <button id="goRecommend" class="btn">Get Recommendations</button>
+</div>
+{% endblock %}
